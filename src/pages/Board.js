@@ -237,6 +237,7 @@ const Board = () => {
                 changeFiles = [];
                 originFiles = [];
                 setBoard(response.data.item);
+                setFileList(() => response.data.item.boardFileDtoList);
                 // window.location.reload();
             }
         } catch(e) {
