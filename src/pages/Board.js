@@ -6,6 +6,7 @@ import axios from 'axios';
 
 const Board = () => {
     const navi = useNavigate();
+    const [fileList, setFileList] = useState([]);
 
     const [board, setBoard] = useState(null);
 
