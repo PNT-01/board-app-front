@@ -444,7 +444,7 @@ const Board = () => {
                 <Grid item
                       xs={10}>
                     <Container component='div' name='preview' id='preview'>
-                        {board != null && board.boardFileDtoList.map((boardFile, index) => (
+                        {fileList && fileList.map((boardFile, index) => (
                             <div key={index}
                             style={{
                                 display: 'inline-block',
